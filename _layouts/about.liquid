@@ -93,5 +93,10 @@ layout: default
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
     {% endif %}
+
+    <!-- Visitor map (spinning globe / map widget) -->
+    <div class="visitor-map text-center mt-4">
+      {% include visitor_map.liquid %}
+    </div>
   </article>
 </div>
