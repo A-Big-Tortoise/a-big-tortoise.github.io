@@ -29,6 +29,14 @@ body {
   line-height: 1.6;
 }
 
+// Scale the profile photo to 95% of its container, keeping aspect ratio
+.profile img {
+  width: 95%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 // Social icons under profile picture
 .profile .social {
   margin-top: 0.6rem;
