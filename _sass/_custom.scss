@@ -13,14 +13,20 @@ body {
 
 // Publication entries
 .publications .title {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
 }
 
 .publications .author,
 .publications .periodical {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--global-text-color-light);
+}
+
+// Awards & Services list items
+.post article > ul li {
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 // Social icons under profile picture
