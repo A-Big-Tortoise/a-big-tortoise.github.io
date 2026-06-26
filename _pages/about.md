@@ -2,6 +2,7 @@
 layout: about
 title: About
 permalink: /
+visitor_map: true
 subtitle:
 
 profile:
@@ -45,3 +46,5 @@ I am a second-year Ph.D. student in the College of Engineering at the University
 <p class="lead">
 My research interests mainly focus on Mobile Sensing, Health Monitoring, and Signal Processing.
 </p>
+
+{% include visitor_map.liquid hidden=true %}

@@ -14,5 +14,15 @@
 -->
 
 <!-- BEGIN visitor map snippet -->
-<script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=1teBlh-fHloJFfSGloahdflu6klDG2kZCaXGzUfuf5M&cl=ffffff&w=a"></script>
+{% if include.hidden %}
+  <div class="visitor-map-tracker" aria-hidden="true" style="display: none !important;">
+{% endif %}
+<script
+  type="text/javascript"
+  id="mapmyvisitors"
+  src="https://mapmyvisitors.com/map.js?d=1teBlh-fHloJFfSGloahdflu6klDG2kZCaXGzUfuf5M&cl=ffffff&w=a"
+></script>
+{% if include.hidden %}
+  </div>
+{% endif %}
 <!-- END visitor map snippet -->
