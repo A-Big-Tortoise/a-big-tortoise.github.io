@@ -16,6 +16,13 @@ profile:
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 
+papers_under_review:
+  enabled: true
+  items:
+    - title: "SeismoApnea: Bodyseismography-Based Overnight Sleep Apnea Monitoring and Apnea-Hypopnea Index Estimation"
+      authors: "Jiayu Chen, Zixuan Zeng, Yingjian Song, Jiahui Li, Zhenlin An, Xiang Zhang, Fei Dou, Deepak Das, Bradley Phillips, WenZhan Song"
+      venue: "Under Review"
+
 awards:
   enabled: true
   items:
@@ -44,25 +51,21 @@ I am a second-year Ph.D. student in the College of Engineering at the University
 </p>
 
 <p class="lead">
-My research interests mainly focus on Mobile Sensing, Health Monitoring, and Signal Processing.
+My research interests mainly focus on Mobile Sensing, Health Monitoring, and Signal Processing. I am currently leading three research projects:
 </p>
 
-<p class="lead">
-I am currently leading three research projects:
-</p>
-
-<ol>
+<ol class="research-projects">
   <li>
     <a href="{% link _pages/research-sleep-apnea-monitoring.md %}">Sleep Apnea Monitoring</a>:
-    developing sensing methods for accessible, continuous sleep-breathing assessment.
+    utilizing a geophone-based system for overnight sleep apnea monitoring, including AHI, apnea severity, and total sleep time estimation.
   </li>
   <li>
     <a href="{% link _pages/research-baby-vital-signs-monitoring.md %}">Baby Vital Signs Monitoring</a>:
     exploring non-contact and low-burden approaches for monitoring infant vital signs.
   </li>
   <li>
-    <a href="{% link _pages/research-heart-rate-variability.md %}">Heart Rate Variability</a>:
-    studying physiological signal features that reflect autonomic nervous system activity.
+    <a href="{% link _pages/research-heart-rate-variability.md %}">Heart Rate Variability Estimation</a>:
+    developing reliable methods for extracting fine-grained HRV metrics from noisy BCG/BSG signals.
   </li>
 </ol>
 

@@ -69,6 +69,26 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Papers under review -->
+    {% if page.papers_under_review and page.papers_under_review.enabled %}
+      <h2 class="section-heading">Papers Under Review</h2>
+      <ul>
+        {% for paper in page.papers_under_review.items %}
+          <li>
+            <strong>{{ paper.title }}</strong>
+            {% if paper.authors %}
+              <br>
+              {{ paper.authors }}
+            {% endif %}
+            {% if paper.venue %}
+              <br>
+              <em>{{ paper.venue }}</em>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
     <!-- Awards -->
     {% if page.awards and page.awards.enabled %}
       <h2 class="section-heading">Awards</h2>

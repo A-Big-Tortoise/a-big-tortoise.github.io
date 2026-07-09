@@ -8,11 +8,11 @@ nav: false
 
 ## Overview
 
-This project focuses on accessible sleep apnea monitoring using mobile sensing and signal processing. The goal is to support continuous, low-burden assessment of sleep-breathing patterns outside traditional clinical settings.
+This project utilizes a geophone-based system for overnight sleep apnea monitoring. The system estimates key sleep and breathing metrics, including apnea-hypopnea index (AHI), apnea severity, and total sleep time (TST), and supports accessible home screening and long-term monitoring as a complement to clinical polysomnography (PSG).
 
 ## Current Progress
 
-I am working on sensing pipelines that capture sleep-related physiological and behavioral signals, extract robust features, and evaluate whether these features can indicate breathing irregularities during sleep.
+I am working on sensing and signal processing pipelines that capture bodyseismography signals during overnight sleep, extract robust breathing-related features, and estimate clinically meaningful apnea metrics from the collected data.
 
 ## Preliminary Results
 
