@@ -47,4 +47,23 @@ I am a second-year Ph.D. student in the College of Engineering at the University
 My research interests mainly focus on Mobile Sensing, Health Monitoring, and Signal Processing.
 </p>
 
+<p class="lead">
+I am currently leading three research projects:
+</p>
+
+<ol>
+  <li>
+    <a href="{% link _pages/research-sleep-apnea-monitoring.md %}">Sleep Apnea Monitoring</a>:
+    developing sensing methods for accessible, continuous sleep-breathing assessment.
+  </li>
+  <li>
+    <a href="{% link _pages/research-baby-vital-signs-monitoring.md %}">Baby Vital Signs Monitoring</a>:
+    exploring non-contact and low-burden approaches for monitoring infant vital signs.
+  </li>
+  <li>
+    <a href="{% link _pages/research-heart-rate-variability.md %}">Heart Rate Variability</a>:
+    studying physiological signal features that reflect autonomic nervous system activity.
+  </li>
+</ol>
+
 {% include visitor_map.liquid hidden=true %}
