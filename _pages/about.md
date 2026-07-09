@@ -69,4 +69,8 @@ My research interests mainly focus on Mobile Sensing, Health Monitoring, and Sig
   </li>
 </ol>
 
+<p>
+I warmly welcome students, researchers, and collaborators who are interested in these topics to reach out.
+</p>
+
 {% include visitor_map.liquid hidden=true %}
