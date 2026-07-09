@@ -51,7 +51,7 @@ I am a second-year Ph.D. student in the College of Engineering at the University
 </p>
 
 <p class="lead">
-My research interests mainly focus on Mobile Sensing, Health Monitoring, and Signal Processing. I am currently leading three research projects:
+My research interests mainly focus on Human Sensing and Signal Processing. I am currently leading three research projects:
 </p>
 
 <ol class="research-projects">
@@ -69,8 +69,8 @@ My research interests mainly focus on Mobile Sensing, Health Monitoring, and Sig
   </li>
 </ol>
 
-<p>
-I warmly welcome students, researchers, and collaborators who are interested in these topics to reach out.
+<p class="lead">
+I warmly welcome researchers who are interested in these topics to reach out.
 </p>
 
 {% include visitor_map.liquid hidden=true %}
