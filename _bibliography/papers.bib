@@ -19,25 +19,6 @@
 
 
 
-@article{song2025multi,
-  abbr        = {IMWUT/UbiComp},
-  title={Multi-granularity Supervised Contrastive Learning with Online Adaptation for Contactless In-bed Posture Classification},
-  author={Song, Yingjian and Xiang, Haotian and Zeng, Zixuan and Chen, Jiayu and Zhang, Yida and Pitafi, Zaid Farooq and Yang, He and Lu, Qin and Zhang, Xiang and Phillips, Bradley G and others},
-  journal={Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies},
-  volume={9},
-  number={2},
-  pages={1--32},
-  year={2025},
-  bibtex_show = {true},
-  publisher={ACM New York, NY, USA},
-  selected    = {true},
-  slides = {SleepPostureUbiComp25.pdf},
-  url = {https://dl.acm.org/doi/abs/10.1145/3729464},
-  doi = {10.1145/3729464},
-  abstract={In-bed postures offer valuable information about an individual's sleep quality and overall health conditions, particularly for patients with sleep apnea. However, current in-bed posture classification systems lack privacy-friendly and easy-to-install options. Furthermore, existing solutions do not consider variations between patients and are typically trained only once, neglecting the utilization of time consistency and unlabeled data from new patients. To address these limitations, this paper builds on a seismic sensor to introduce a novel sleep posture framework, which comprises two main components, namely, the Multi-Granularity Supervised Contrastive Learning (MGSCL) module and the ensemble Online Adaptation (oa) module. Unlike most existing contrastive learning frameworks that operate at the sample level, MGSCL leverages multi-granular information, operating not only at the sample level but also at the group level. The oa module enables the model to adapt to new patient data while ensuring time consistency in sleep posture predictions. Additionally, it quantifies model uncertainty to generate weighted predictions, further enhancing performance. Evaluated on a dataset of 100 patients collected at a clinical research center, MGSCLoa achieved an average accuracy of 91.67% and an average F1 score of 91.53% with only 40 seconds of labeled data per posture. In a Phase 2 evaluation with 11 participants over 13 nights in home settings, the framework reached an average accuracy of 85.37% and a weighted F1 score of 83.59% using just 3 minutes of labeled data per common posture for each participant. These results underscore the potential of seismic sensor-based in-bed posture classification for assessing sleep quality and related health conditions.}
-}
-
-
 
 @article{song2026contactless,
   abbr        = {IMWUT/UbiComp},
@@ -50,6 +31,7 @@
   year={2026},
   selected    = {true},
   bibtex_show = {true},
+  preview = {Apnea.png},
   url = {https://dl.acm.org/doi/abs/10.1145/3810211},
   doi = {10.1145/3810211},
   abstract={Sleep apnea is a prevalent yet underdiagnosed sleep disorder. Existing monitoring approaches largely rely on wearable devices or smartphone-based systems, which can be uncomfortable, require active user engagement, or be sensitive to environmental conditions. In this paper, we present a feasibility study of a contactless, engagement-free sleep-apnea screening approach using an under-bed horizontal (head-to-foot) seismic sensor that captures micro vibrations from respiration, heartbeat, and movement. We show that the horizontal axis provides a clearer respiratory signature than the vertical axis, enabling respiration-focused signal analysis. From the seismic signal, we extract 15 features across three families—respiratory heartbeat, and movement—and formulate a minute-level three-class classification task: Normal, OSA+hypopnea, and CSA. Using a strict patient-independent 5-fold cross-validation protocol on 116 subjects, we achieve 85.5% balanced accuracy and 80.6% macro F1 with a random forest classifier; class-wise balanced accuracies are 96.3% (Normal), 75.0% (OSA+hypopnea), and 85.2% (CSA). Overall, this work demonstrates the feasibility of under-bed seismic sensing for window-level apnea-related state classification.}
@@ -66,10 +48,31 @@
   year={2026},
   selected    = {true},
   bibtex_show = {true},
+  preview = {SnorePercom.png},
   slides = {SnoringPercom2026.pdf},
   url = {https://ieeexplore.ieee.org/document/11524561},
   doi = {10.1109/PerCom67906.2026.11524561},
   abstract={Snoring and breath-stopping are key symptoms of sleep apnea. Most existing studies primarily focus on wearable devices or smartphone-based systems. Wearable devices can be uncomfortable, while smartphone-based systems often require specific angles, distances, or positions, making them sensitive to environmental changes. This paper proposes a contactless and engagement-free system for snoring and breath-stopping detection using a seismic sensor. Distinguishing between snoring, breath-stopping, and normal breathing from raw data alone is challenging. Snoring features typically reside in a higher frequency range than breath-stopping and normal breathing, with breath-stopping features appearing in a lower frequency range. Calculating the differential and integral of raw data can enhance features in low and high frequencies, respectively. We introduce AFFCL, an attention feature fusion and contrastive learning framework to leverage information from differential and integral signals. AFFCL generates both shared and exclusive features from the differential and integral signals and employs an attention mechanism for feature fusion. Additionally, cluster-level supervised contrastive learning in AFFCL further enhances system performance. Our system has been performed 5-fold cross-validation on 44 people, which achieves an average accuracy of 93.40\% and an F1 score of 92.42\%. The accuracy for detecting breath-stopping, snoring, and normal breathing are 89.54\%, 94.60\%, and 96.06\%, respectively. Evaluation results demonstrate that our system effectively identifies breath-stopping and snoring.}
+}
+
+
+@article{song2025multi,
+  abbr        = {IMWUT/UbiComp},
+  title={Multi-granularity Supervised Contrastive Learning with Online Adaptation for Contactless In-bed Posture Classification},
+  author={Song, Yingjian and Xiang, Haotian and Zeng, Zixuan and Chen, Jiayu and Zhang, Yida and Pitafi, Zaid Farooq and Yang, He and Lu, Qin and Zhang, Xiang and Phillips, Bradley G and others},
+  journal={Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies},
+  volume={9},
+  number={2},
+  pages={1--32},
+  year={2025},
+  bibtex_show = {true},
+  publisher={ACM New York, NY, USA},
+  selected    = {true},
+  preview = {posture.png},
+  slides = {SleepPostureUbiComp25.pdf},
+  url = {https://dl.acm.org/doi/abs/10.1145/3729464},
+  doi = {10.1145/3729464},
+  abstract={In-bed postures offer valuable information about an individual's sleep quality and overall health conditions, particularly for patients with sleep apnea. However, current in-bed posture classification systems lack privacy-friendly and easy-to-install options. Furthermore, existing solutions do not consider variations between patients and are typically trained only once, neglecting the utilization of time consistency and unlabeled data from new patients. To address these limitations, this paper builds on a seismic sensor to introduce a novel sleep posture framework, which comprises two main components, namely, the Multi-Granularity Supervised Contrastive Learning (MGSCL) module and the ensemble Online Adaptation (oa) module. Unlike most existing contrastive learning frameworks that operate at the sample level, MGSCL leverages multi-granular information, operating not only at the sample level but also at the group level. The oa module enables the model to adapt to new patient data while ensuring time consistency in sleep posture predictions. Additionally, it quantifies model uncertainty to generate weighted predictions, further enhancing performance. Evaluated on a dataset of 100 patients collected at a clinical research center, MGSCLoa achieved an average accuracy of 91.67% and an average F1 score of 91.53% with only 40 seconds of labeled data per posture. In a Phase 2 evaluation with 11 participants over 13 nights in home settings, the framework reached an average accuracy of 85.37% and a weighted F1 score of 83.59% using just 3 minutes of labeled data per common posture for each participant. These results underscore the potential of seismic sensor-based in-bed posture classification for assessing sleep quality and related health conditions.}
 }
 
 
@@ -80,7 +83,8 @@
   author={Song*, Yingjian and Chen*, Jiayu and Zhang, Yida and Zeng, Zixuan and Pitafi, Zaid Farooq and Phillips, Bradley G. and Zhang, Xiang and Xie, Zaipeng and Lu, Qin and Dou, Fei and Song, Wenzhan},
   journal={Computing in Cardiology (CinC)},
   year={2026},
-  selected    = {true}
+  selected    = {true},
+  preview = {SeatVitals.png}
 }
 
 
