@@ -55,21 +55,36 @@ body {
   }
 }
 
-// Scale the profile photo while keeping its right edge aligned.
-.profile.float-right img.img-fluid {
-  width: 85% !important;
-  max-width: 85% !important;
-  height: auto;
-  display: block;
+// Keep the profile image and the content below it on the same right-aligned column.
+@media (min-width: 576px) {
+  .profile.float-right {
+    margin-top: -4rem;
+  }
+}
+
+.profile.float-right figure,
+.profile.float-right .more-info,
+.profile.float-right .social {
+  width: 85%;
+  max-width: 85%;
   margin-left: auto;
   margin-right: 0;
 }
 
-.profile.float-right .more-info,
-.profile.float-right .social {
-  width: 85%;
-  margin-left: auto;
-  margin-right: 0;
+.profile.float-right figure {
+  display: block;
+}
+
+.profile.float-right figure picture,
+.profile.float-right figure img.img-fluid {
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto;
+}
+
+.profile.float-right .more-info {
+  text-align: left;
 }
 
 // Social icons under profile picture

@@ -17,11 +17,41 @@
 {% if include.hidden %}
   <div class="visitor-map-tracker" aria-hidden="true" style="display: none !important;">
 {% endif %}
-<script
-  type="text/javascript"
-  id="mapmyvisitors"
-  src="https://mapmyvisitors.com/map.js?d=1teBlh-fHloJFfSGloahdflu6klDG2kZCaXGzUfuf5M&cl=ffffff&w=a"
-></script>
+<div class="mapmyvisitors-container"></div>
+<script>
+  (function () {
+    var container = document.currentScript.previousElementSibling;
+    var now = new Date();
+    var today =
+      now.getFullYear() +
+      "-" +
+      String(now.getMonth() + 1).padStart(2, "0") +
+      "-" +
+      String(now.getDate()).padStart(2, "0");
+    var storageKey = "mapmyvisitors-loaded-" + today;
+    var shouldLoad = true;
+
+    try {
+      if (window.localStorage.getItem(storageKey)) {
+        shouldLoad = false;
+      } else {
+        window.localStorage.setItem(storageKey, "true");
+      }
+    } catch (error) {
+      // If localStorage is unavailable, still load the widget.
+    }
+
+    if (!shouldLoad) {
+      return;
+    }
+
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.id = "mapmyvisitors";
+    script.src = "https://mapmyvisitors.com/map.js?d=1teBlh-fHloJFfSGloahdflu6klDG2kZCaXGzUfuf5M&cl=ffffff&w=a";
+    container.appendChild(script);
+  })();
+</script>
 {% if include.hidden %}
   </div>
 {% endif %}

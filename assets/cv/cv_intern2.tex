@@ -23,13 +23,14 @@
 \documentclass{resume} % Use the custom resume.cls style
 \usepackage[left=0.7in,top=0.4in,right=0.7in,bottom=0.5in]{geometry} % Document margins
 \usepackage{xcolor}
+\usepackage{tabularx}
 \usepackage[colorlinks=true,urlcolor=blue,linkcolor=blue]{hyperref}
 
 %----------------------------------------------------------------------------------------
 %   DOCUMENT START
 %----------------------------------------------------------------------------------------
 \name{Jiayu Chen} % Your name
-\address{(706)-247-3015 \quad Athens, GA, 30605 \quad Jiayu.Chen@uga.edu \quad \href{https://a-big-tortoise.github.io}{Website}}
+\address{(706)-247-3015 \quad $\diamond$ \quad Athens, GA, 30605 \quad $\diamond$ \quad Jiayu.Chen@uga.edu \quad $\diamond$ \quad \href{https://a-big-tortoise.github.io}{Website}}
 % github.com/firstlast \\ ca.linkedin.com/in/firstlast % Your phone number and email
 \begin{document}
 \makeheader
@@ -73,15 +74,15 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Projects}
-\begin{rSubsection}{Vital Signs Estimation for Adults and Babies}{2024-2025}{}{}
+\begin{rSubsection}{Vital Signs Estimation for Adults and Infants}{}{}{}
 \vspace{-.1cm}
 \small
-Focused on accurate vital sign estimation from BCG signals, including heart rate (HR), respiratory rate (RR), inter-beat interval (IBI), and heart rate variability (HRV), while developing strong hands-on expertise with commonly used physiological signals, including PPG, ECG, and respiratory belt signals.
+Focused on accurate and robust vital sign estimation from ballistocardiography (BCG) signals, including heart rate (HR), respiratory rate (RR), inter-beat interval (IBI), and heart rate variability (HRV), while developing strong hands-on expertise with commonly used physiological signals, including PPG, ECG, and respiratory belt signals.
 % \item[]
 \end{rSubsection}
-\vspace{-.15cm}
 
-\begin{rSubsection}{Sleep Apnea Monitoring}{2025}{}{}
+
+\begin{rSubsection}{Sleep Apnea Monitoring}{}{}{}
 \vspace{-.1cm}
 % Developed a real-time overnight monitoring framework for noisy BCG signals, enabling snoring detection, apnea event detection, and sleep/wake classification throughout the night. Derived night-level clinical metrics, including snoring severity, total sleep time (TST), apnea-hypopnea index (AHI), and sleep apnea severity classification. 
 
@@ -101,7 +102,7 @@ Led development of a real-time overnight sleep monitoring system using noisy BCG
 
 \end{rSubsection}
 
-\vspace{-.35cm}
+\vspace{-.1cm}
 
 \end{rSection}
 
@@ -116,10 +117,10 @@ Led development of a real-time overnight sleep monitoring system using noisy BCG
 \begin{rSection}{Selected Publications}\small
 
 % \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{5ex}} p{0.78\textwidth} }
+\begin{tabularx}{\textwidth}{ @{} >{\bfseries\raggedright\arraybackslash}p{0.72in} @{\hspace{3ex}} >{\raggedright\arraybackslash}X }
 
 
-Ubicomp 2025 & \textit{SelfDenoiser: Self-supervised Seismic Signal Denoiser for Continuous and Contactless Cardiac Monitoring.} \\ &
+\begin{minipage}[t]{0.72in}\bfseries IMWUT/\\Ubicomp\end{minipage} & \textit{SelfDenoiser: Self-supervised Seismic Signal Denoiser for Continuous and Contactless Cardiac Monitoring.}\newline
 \textbf{Jiayu Chen}, Yingjian Song, Yida Zhang, Zixuan Zeng, Xiang Zhang, Zaid Pitafi, Zaipeng Xie, Deepak Das, Nishan Dong, Junjie Lu, Xiao Yin, WenZhan Song.   \\
 
 % \vspace{-.1cm}
@@ -128,33 +129,33 @@ Ubicomp 2025 & \textit{SelfDenoiser: Self-supervised Seismic Signal Denoiser for
 % \vspace{-.1cm}
 
 
-Percom 2026 & \textit{Attention Feature Fusion with Cluster Contrastive Learning for Snoring and Breath-Holding Detection Using Seismic Sensing.} \\ &
+Percom & \textit{Attention Feature Fusion with Cluster Contrastive Learning for Snoring and Breath-Holding Detection Using Seismic Sensing.}\newline
 Yingjian Song\textsuperscript{*}, \textbf{Jiayu Chen\textsuperscript{*}}, Yida Zhang, Zixuan Zeng, Zaid Pitafi, Bradley Phillips, Xiang Zhang, Wenzhan Song. (\textsuperscript{*} Equal contribution.) \\
 
 % \vspace{-.1cm}
 
 
-Ubicomp 2026 & \textit{Contactless Sleep Apnea Detection with Bodyseismography.} \\&
+\begin{minipage}[t]{0.72in}\bfseries IMWUT/\\Ubicomp\end{minipage} & \textit{Contactless Sleep Apnea Detection with Bodyseismography.}\newline
 Yingjian Song\textsuperscript{*}, \textbf{Jiayu Chen\textsuperscript{*}}, Yida Zhang, Zixuan Zeng, Zaid Pitafi, Bradley Phillips, Xiang Zhang, Fei Dou, Wenzhan Song. (\textsuperscript{*} Equal contribution.) \\
 
 % \vspace{-.1cm}
 
-% Ubicomp 2025 & \textit{Multi-granularity Supervised Contrastive Learning with Online Adaptation for Contactless In-bed Posture Classification.} \\ &
+% \begin{minipage}[t]{0.72in}\bfseries IMWUT/\\Ubicomp\end{minipage} & \textit{Multi-granularity Supervised Contrastive Learning with Online Adaptation for Contactless In-bed Posture Classification.}\newline
 % Yingjian Song, Haotian Xiang, Zixuan Zeng, \textbf{Jiayu Chen}, Yida Zhang, Zaid Pitafi, He Yang, Qin Lu, Xiang Zhang, Bradley Phillips, Fei Dou, WenZhan Song. \\
 
 
-CinC 2026 & \textit{SeatVitals: Geophone-Based Unobtrusive Vital Sign Monitoring for Office Environments.} \\ &
+CinC & \textit{SeatVitals: Geophone-Based Unobtrusive Vital Sign Monitoring for Office Environments.}\newline
 Yingjian Song\textsuperscript{*}, \textbf{Jiayu Chen\textsuperscript{*}}, Yida Zhang, Zixuan Zeng, Zaid Pitafi, Bradley Phillips, Xiang Zhang, Zaipeng Xie, Qin Lu, Fei Dou, Wenzhan Song. (\textsuperscript{*} Equal contribution.) \\
 
 
 
 
-Under Review & \textit{SeismoApnea: Bodyseismography-Based Overnight Sleep Apnea Monitoring and Apnea-Hypopnea Index Estimation.} \\ &
+Under Review & \textit{SeismoApnea: Bodyseismography-Based Overnight Sleep Apnea Monitoring and Apnea-Hypopnea Index Estimation.}\newline
 \textbf{Jiayu Chen}, Zixuan Zeng, Yingjian Song, Jiahui Li, Zhenlin An, Xiang Zhang, Fei Dou, Deepak Das, Bradley Phillips, WenZhan Song.   \\
 
 % \vspace{-.1cm}
 
-\end{tabular}
+\end{tabularx}
 
 % Jiahui Li, Yida Zhang, Zixuan Zeng, \textbf{Jiayu Chen}, Yingjian Song, Yin Xiao, Nishan Dong, Junjie Lu, Younghoon Kwon, Xiang Zhang, Jin Lu, WenZhan Song, Fei Dou. \textit{
 % Peak-Detector: Explainable Peak Detection via Instruction–Tuned Large Language Models in Physiological Signal.} \textbf{Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT/Ubicomp 2026)}
