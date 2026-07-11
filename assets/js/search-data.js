@@ -81,13 +81,6 @@ ninja.data = [{
           window.open("mailto:%6A%69%61%79%75.%63%68%65%6E@%75%67%61.%65%64%75", "_blank");
         },
       },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
-        },
-      },{
         id: 'social-orcid',
         title: 'ORCID',
         section: 'Socials',
