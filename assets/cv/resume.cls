@@ -16,7 +16,7 @@
 \newcommand{\name}[1]{\renewcommand{\@name}{#1}}
 \newcommand{\address}[1]{\renewcommand{\@address}{#1}}
 
-\AtBeginDocument{
+\newcommand{\makeheader}{
   \begin{center}
     {\LARGE\bfseries \@name}\\[0.35em]
     {\small \@address}
