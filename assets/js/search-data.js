@@ -88,6 +88,13 @@ ninja.data = [{
           window.open("/feed.xml", "_blank");
         },
       },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0009-0003-0904-4114", "_blank");
+        },
+      },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
