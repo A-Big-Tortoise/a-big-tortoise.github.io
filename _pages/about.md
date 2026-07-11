@@ -60,16 +60,17 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 <p class="lead">
-I am a second-year Ph.D. student in the College of Engineering at the University of Georgia (UGA), advised by Dr. Wenzhan Song. I received my bachelor's degree from Hohai University.
+I started my Ph.D. in Fall 2024 in the College of Engineering at the University of Georgia (UGA), advised by Dr. Wenzhan Song. I received my
+bachelor's degree from Hohai University.
 </p>
 
 <p class="lead">
-My research interests mainly focus on Human Sensing and Signal Processing.
+My research interests mainly focus on Human Sensing and Signal Processing, with particular expertise in signal denoising.
 </p>
 
 <p class="lead">
-I warmly welcome researchers who are interested in these topics to reach out. Feel free to book a meeting with me
-<a href="https://bookings.cloud.microsoft/bookwithme/user/71e21dfd23584afdb80947c716c4ff66%40uga.edu?anonymous&ismsaljsauthenabled">link</a>.
+I warmly welcome researchers to reach out. Feel free to book a meeting with me
+<a href="https://bookings.cloud.microsoft/bookwithme/user/71e21dfd23584afdb80947c716c4ff66%40uga.edu?anonymous&ismsaljsauthenabled">[link]</a>.
 </p>
 
 {% include visitor_map.liquid hidden=true %}

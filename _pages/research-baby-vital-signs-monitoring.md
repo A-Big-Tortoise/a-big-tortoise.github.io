@@ -6,13 +6,11 @@ description: Research project on low-burden baby vital signs monitoring.
 nav: false
 ---
 
-## Preliminary Results
-
-Initial experiments suggest that non-contact or minimally intrusive sensing can provide useful vital-sign-related signals under controlled conditions. Ongoing work is focused on improving reliability in more realistic scenarios.
-
 ## Poster
 
-[View poster](/assets/img/Baby_Poster.pdf)
+<object data="/assets/img/Baby_Poster.pdf" type="application/pdf" width="100%" height="900">
+  <p><a href="/assets/img/Baby_Poster.pdf">View poster</a></p>
+</object>
 
 ## Demo Vedio
 
