@@ -21,7 +21,7 @@ in_progress_projects:
   items:
     - title: "Sleep Apnea Monitoring"
       url: "/research/sleep-apnea-monitoring/"
-      description: "Utilizing a geophone-based system for overnight sleep apnea monitoring, including AHI, apnea severity, and total sleep time estimation."
+      description: "Utilizing a geophone-based system for overnight sleep apnea monitoring, including apnea-hypopnea index (AHI), apnea severity, and total sleep time estimation."
     - title: "Baby Vital Signs Monitoring"
       url: "/research/baby-vital-signs-monitoring/"
       description: "Exploring non-contact and low-burden approaches for monitoring infant vital signs."
