@@ -56,8 +56,9 @@ body {
 }
 
 // Scale the profile photo while keeping its right edge aligned.
-.profile img {
-  width: 85%;
+.profile.float-right img.img-fluid {
+  width: 85% !important;
+  max-width: 85% !important;
   height: auto;
   display: block;
   margin-left: auto;
