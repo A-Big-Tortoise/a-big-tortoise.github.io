@@ -8,9 +8,7 @@ nav: false
 
 ## Poster
 
-<object data="/assets/img/Baby_Poster.pdf" type="application/pdf" width="100%" height="900">
-  <p><a href="/assets/img/Baby_Poster.pdf">View poster</a></p>
-</object>
+{% include figure.liquid path="/assets/img/Baby_Poster.png" title="Baby vital signs monitoring poster." class="img-fluid rounded z-depth-1" %}
 
 ## Demo Vedio
 
