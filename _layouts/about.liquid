@@ -61,6 +61,19 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+    <!-- In progress projects -->
+    {% if page.in_progress_projects and page.in_progress_projects.enabled %}
+      <h2 class="section-heading">In Progress Projects</h2>
+      <ol class="research-projects">
+        {% for project in page.in_progress_projects.items %}
+          <li>
+            <a href="{{ project.url | relative_url }}">{{ project.title }}</a>:
+            {{ project.description }}
+          </li>
+        {% endfor %}
+      </ol>
+    {% endif %}
+
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2 class="section-heading">

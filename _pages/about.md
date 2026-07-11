@@ -16,6 +16,19 @@ profile:
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 
+in_progress_projects:
+  enabled: true
+  items:
+    - title: "Sleep Apnea Monitoring"
+      url: "/research/sleep-apnea-monitoring/"
+      description: "Utilizing a geophone-based system for overnight sleep apnea monitoring, including AHI, apnea severity, and total sleep time estimation."
+    - title: "Baby Vital Signs Monitoring"
+      url: "/research/baby-vital-signs-monitoring/"
+      description: "Exploring non-contact and low-burden approaches for monitoring infant vital signs."
+    - title: "Heart Rate Variability Estimation"
+      url: "/research/heart-rate-variability/"
+      description: "Developing reliable methods for extracting fine-grained HRV metrics from noisy BCG/BSG signals."
+
 papers_under_review:
   enabled: true
   items:
@@ -51,26 +64,12 @@ I am a second-year Ph.D. student in the College of Engineering at the University
 </p>
 
 <p class="lead">
-My research interests mainly focus on Human Sensing and Signal Processing. I am currently leading three research projects:
+My research interests mainly focus on Human Sensing and Signal Processing.
 </p>
 
-<ol class="research-projects">
-  <li>
-    <a href="{% link _pages/research-sleep-apnea-monitoring.md %}">Sleep Apnea Monitoring</a>:
-    utilizing a geophone-based system for overnight sleep apnea monitoring, including AHI, apnea severity, and total sleep time estimation.
-  </li>
-  <li>
-    <a href="{% link _pages/research-baby-vital-signs-monitoring.md %}">Baby Vital Signs Monitoring</a>:
-    exploring non-contact and low-burden approaches for monitoring infant vital signs.
-  </li>
-  <li>
-    <a href="{% link _pages/research-heart-rate-variability.md %}">Heart Rate Variability Estimation</a>:
-    developing reliable methods for extracting fine-grained HRV metrics from noisy BCG/BSG signals.
-  </li>
-</ol>
-
 <p class="lead">
-I warmly welcome researchers who are interested in these topics to reach out.
+I warmly welcome researchers who are interested in these topics to reach out. Feel free to book a meeting with me
+<a href="https://bookings.cloud.microsoft/bookwithme/user/71e21dfd23584afdb80947c716c4ff66%40uga.edu?anonymous&ismsaljsauthenabled">link</a>.
 </p>
 
 {% include visitor_map.liquid hidden=true %}
