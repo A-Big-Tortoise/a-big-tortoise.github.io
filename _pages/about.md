@@ -25,6 +25,11 @@ in_progress_projects:
     - title: "Baby Vital Signs Monitoring"
       url: "/research/baby-vital-signs-monitoring/"
       description: "Exploring non-contact and low-burden approaches for monitoring infant vital signs."
+      links:
+        - label: "Poster"
+          url: "/research/baby-vital-signs-monitoring/"
+        - label: "Video"
+          url: "/research/baby-vital-signs-monitoring/"
     - title: "Heart Rate Variability Estimation"
       url: "/research/heart-rate-variability/"
       description: "Developing reliable methods for extracting fine-grained HRV metrics from noisy BCG/BSG signals."

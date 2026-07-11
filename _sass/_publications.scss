@@ -100,11 +100,12 @@
 
       .links {
         a.publication-link {
-          color: var(--global-theme-color);
+          color: var(--global-theme-color) !important;
+          cursor: pointer;
           margin-right: 0.75rem;
 
           &:hover {
-            color: var(--global-theme-color);
+            color: var(--global-theme-color) !important;
             text-decoration: underline;
           }
         }
@@ -166,6 +167,22 @@
 
       div.abstract.hidden.open {
         border-color: var(--global-text-color);
+      }
+
+      div.bibtex.hidden {
+        figure.highlight {
+          background: transparent;
+        }
+
+        pre,
+        code {
+          background-color: var(--global-card-bg-color);
+        }
+      }
+
+      div.bibtex.hidden.open {
+        border: 1px solid var(--global-divider-color);
+        border-radius: 6px;
       }
     }
     div.award.hidden {

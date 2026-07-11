@@ -66,14 +66,21 @@ layout: default
     <!-- In progress projects -->
     {% if page.in_progress_projects and page.in_progress_projects.enabled %}
       <h2 class="section-heading">In Progress Projects</h2>
-      <ol class="research-projects">
+      <div class="research-projects">
         {% for project in page.in_progress_projects.items %}
-          <li>
-            <a href="{{ project.url | relative_url }}">{{ project.title }}</a>:
-            {{ project.description }}
-          </li>
+          <div class="research-project">
+            <div class="research-project-title">
+              <strong><a href="{{ project.url | relative_url }}">{{ project.title }}</a></strong>
+              {% if project.links %}
+                {% for link in project.links %}
+                  <a href="{{ link.url | relative_url }}">[{{ link.label }}]</a>
+                {% endfor %}
+              {% endif %}
+            </div>
+            <div class="research-project-description">{{ project.description }}</div>
+          </div>
         {% endfor %}
-      </ol>
+      </div>
     {% endif %}
 
     <!-- Selected papers -->

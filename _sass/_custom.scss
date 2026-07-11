@@ -34,8 +34,24 @@ body {
   font-size: 0.95rem;
   line-height: 1.55;
 
-  li {
-    margin-bottom: 0.35rem;
+  .research-project {
+    margin-bottom: 0.85rem;
+  }
+
+  .research-project-title {
+    font-size: 16px;
+    line-height: 1.4;
+
+    a {
+      margin-right: 0.45rem;
+    }
+  }
+
+  .research-project-description {
+    color: var(--global-text-color-light);
+    font-size: 15px;
+    line-height: 1.45;
+    margin-top: 0.15rem;
   }
 }
 
