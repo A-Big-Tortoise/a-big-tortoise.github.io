@@ -55,12 +55,13 @@ body {
   }
 }
 
-// Scale the profile photo to 95% of its container, keeping aspect ratio
+// Scale the profile photo while keeping its right edge aligned.
 .profile img {
-  width: 95%;
+  width: 85%;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 // Social icons under profile picture
