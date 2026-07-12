@@ -19,28 +19,15 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 in_progress_projects:
   enabled: true
   items:
-    - title: "Sleep Apnea Monitoring"
+    - title: "Sleep Apnea Monitoring [Principle Illustration] [Preliminary Results]"
       url: "/research/sleep-apnea-monitoring/"
       description: "Utilizing a geophone-based system for overnight sleep apnea monitoring, including apnea-hypopnea index (AHI), apnea severity, and total sleep time estimation."
-      links:
-        - label: "Principle Illustration"
-          url: "/research/sleep-apnea-monitoring/"
-        - label: "Preliminary Results"
-          url: "/research/sleep-apnea-monitoring/"
-    - title: "Baby Vital Signs Monitoring"
+    - title: "Baby Vital Signs Monitoring [Poster] [Video]"
       url: "/research/baby-vital-signs-monitoring/"
       description: "Exploring non-contact and low-burden approaches for monitoring infant vital signs."
-      links:
-        - label: "Poster"
-          url: "/research/baby-vital-signs-monitoring/"
-        - label: "Video"
-          url: "/research/baby-vital-signs-monitoring/"
-    - title: "Heart Rate Variability Estimation"
+    - title: "Heart Rate Variability Estimation [Preliminary Results]"
       url: "/research/heart-rate-variability/"
       description: "Developing reliable methods for extracting fine-grained HRV metrics from noisy BCG/BSG signals."
-      links:
-        - label: "Preliminary Results"
-          url: "/research/heart-rate-variability/"
 
 papers_under_review:
   enabled: true
