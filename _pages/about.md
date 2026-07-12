@@ -22,6 +22,11 @@ in_progress_projects:
     - title: "Sleep Apnea Monitoring"
       url: "/research/sleep-apnea-monitoring/"
       description: "Utilizing a geophone-based system for overnight sleep apnea monitoring, including apnea-hypopnea index (AHI), apnea severity, and total sleep time estimation."
+      links:
+        - label: "Principle Illustration"
+          url: "/research/sleep-apnea-monitoring/"
+        - label: "Preliminary Results"
+          url: "/research/sleep-apnea-monitoring/"
     - title: "Baby Vital Signs Monitoring"
       url: "/research/baby-vital-signs-monitoring/"
       description: "Exploring non-contact and low-burden approaches for monitoring infant vital signs."
@@ -33,6 +38,9 @@ in_progress_projects:
     - title: "Heart Rate Variability Estimation"
       url: "/research/heart-rate-variability/"
       description: "Developing reliable methods for extracting fine-grained HRV metrics from noisy BCG/BSG signals."
+      links:
+        - label: "Preliminary Results"
+          url: "/research/heart-rate-variability/"
 
 papers_under_review:
   enabled: true
