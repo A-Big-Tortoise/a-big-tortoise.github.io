@@ -17,3 +17,15 @@ I am working on sensing and signal processing pipelines that capture bodyseismog
 ## Preliminary Results
 
 Preliminary work shows that mobile sensing signals can capture meaningful patterns related to sleep-breathing behavior. The next step is to improve robustness across different users, sleeping environments, and sensing conditions.
+
+{% include figure.liquid
+  path="assets/img/research/apnea/apnea_reg.png"
+  class="img-fluid rounded z-depth-1"
+  alt="Preliminary sleep apnea regression results"
+%}
+
+{% include figure.liquid
+  path="assets/img/research/apnea/apnea_clf.png"
+  class="img-fluid rounded z-depth-1"
+  alt="Preliminary sleep apnea classification results"
+%}
