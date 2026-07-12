@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /research/heart-rate-variability/
-title: Heart Rate Variability Estimation
+title: "Heart Rate Variability Estimation [Preliminary Results]"
 description:
 nav: false
 ---
@@ -12,9 +12,10 @@ This project studies reliable heart rate variability (HRV) estimation from noisy
 
 Preliminary analysis indicates that fine-grained HRV features can be recovered from BCG/BSG signals under selected conditions, but reliable estimation requires careful preprocessing, noise rejection, and validation against higher-quality physiological references.
 
-{% include figure.liquid
-  path="assets/img/research/hrv/HRV_res.png"
-  class="img-fluid rounded z-depth-1"
-  max-width="40%"
-  alt="Preliminary HRV estimation results"
-%}
+<div class="hrv-result-figure">
+  {% include figure.liquid
+    path="assets/img/research/hrv/HRV_res.png"
+    class="img-fluid rounded z-depth-1"
+    alt="Preliminary HRV estimation results"
+  %}
+</div>

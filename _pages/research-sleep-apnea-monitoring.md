@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /research/sleep-apnea-monitoring/
-title: Sleep Apnea Monitoring
+title: "Sleep Apnea Monitoring [Pinciple Illusration, Preliminary Results]"
 description:
 nav: false
 ---
@@ -20,16 +20,19 @@ This project utilizes a geophone-based system for overnight sleep apnea monitori
 
 Preliminary work shows that mobile sensing signals can capture meaningful patterns related to sleep-breathing behavior. The next step is to improve robustness across different users, sleeping environments, and sensing conditions.
 
-{% include figure.liquid
-  path="assets/img/research/apnea/apnea_reg.png"
-  class="img-fluid rounded z-depth-1"
-  max-width="60%"
-  alt="Preliminary sleep apnea regression results"
-%}
-
-{% include figure.liquid
-  path="assets/img/research/apnea/apnea_clf.png"
-  class="img-fluid rounded z-depth-1"
-  max-width="30%"
-  alt="Preliminary sleep apnea classification results"
-%}
+<div class="apnea-results-row">
+  <div class="apnea-result-reg">
+    {% include figure.liquid
+      path="assets/img/research/apnea/apnea_reg.png"
+      class="img-fluid rounded z-depth-1"
+      alt="Preliminary sleep apnea regression results"
+    %}
+  </div>
+  <div class="apnea-result-clf">
+    {% include figure.liquid
+      path="assets/img/research/apnea/apnea_clf.png"
+      class="img-fluid rounded z-depth-1"
+      alt="Preliminary sleep apnea classification results"
+    %}
+  </div>
+</div>

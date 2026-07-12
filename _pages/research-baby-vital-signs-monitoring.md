@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /research/baby-vital-signs-monitoring/
-title: Baby Vital Signs Monitoring
+title: "Baby Vital Signs Monitoring [Poster, Video]"
 description: Research project on low-burden baby vital signs monitoring.
 nav: false
 ---

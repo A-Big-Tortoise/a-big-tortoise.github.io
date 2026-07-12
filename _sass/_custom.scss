@@ -122,3 +122,52 @@ body {
 .home-section {
   margin-bottom: 2rem;
 }
+
+.hrv-result-figure {
+  width: 40%;
+  max-width: 40%;
+  margin: 1rem auto 0;
+
+  figure {
+    margin-bottom: 0;
+  }
+}
+
+.apnea-results-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  .apnea-result-reg {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+
+  .apnea-result-clf {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+
+  figure {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hrv-result-figure {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .apnea-results-row {
+    flex-direction: column;
+
+    .apnea-result-reg,
+    .apnea-result-clf {
+      flex: 0 0 auto;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
