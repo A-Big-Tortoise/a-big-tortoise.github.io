@@ -6,7 +6,7 @@ description:
 nav: false
 ---
 
-This project studies reliable heart rate variability (HRV) estimation from noisy ballistocardiography/bodyseismography (BCG/BSG) signals.
+This project studies reliable heart rate variability (HRV) estimation from noisy ballistocardiography/bodyseismography (BCG/BSG) signals. Although HRV estimation from BCG signals is often perceived as a mature and solved problem, it remains a challenging open problem in realistic sensing conditions.
 
 ## Preliminary Results
 
@@ -15,5 +15,6 @@ Preliminary analysis indicates that fine-grained HRV features can be recovered f
 {% include figure.liquid
   path="assets/img/research/hrv/HRV_res.png"
   class="img-fluid rounded z-depth-1"
+  max-width="40%"
   alt="Preliminary HRV estimation results"
 %}
