@@ -10,6 +10,7 @@ This guide helps you add website analytics to track visitor statistics and behav
   - [Google Analytics](#google-analytics)
     - [Setup Steps](#setup-steps)
   - [Privacy-Friendly Alternatives](#privacy-friendly-alternatives)
+    - [Umami Analytics](#umami-analytics)
     - [Pirsch Analytics](#pirsch-analytics)
     - [Openpanel Analytics](#openpanel-analytics)
   - [Monitoring &amp; Performance](#monitoring--performance)
@@ -32,7 +33,8 @@ Analytics help you understand your website visitors: where they come from, which
 Currently implemented in al-folio:
 
 - **Google Analytics** – Free, feature-rich, but collects user data
-- **Pirsch Analytics** – GDPR-compliant, free tier available, European servers
+- **Umami Analytics** – Privacy-friendly, cookieless, and free for small personal sites
+- **Pirsch Analytics** – GDPR-compliant, paid after a free trial, European servers
 - **Openpanel Analytics** – Open-source option, privacy-focused
 - **Cronitor** – Uptime monitoring with Real User Monitoring (RUM) analytics
 
@@ -78,6 +80,30 @@ Google Analytics is free and widely used. It provides detailed insights into vis
 
 If you're concerned about user privacy or GDPR compliance, consider these alternatives:
 
+### Umami Analytics
+
+**Best for:** Free, anonymous aggregate analytics for a personal website
+
+**Features:**
+
+- ✅ Cookieless and privacy-focused
+- ✅ Free Hobby plan for one low-traffic website
+- ✅ Page, referrer, device, location, and visit-duration reports
+- ✅ Custom events for downloads and outbound links
+
+**Setup:**
+
+1. Sign up at [Umami Cloud](https://cloud.umami.is)
+2. Add your website and copy its **Website ID**
+3. In `_config.yml`, set `enable_umami_analytics: true`
+4. Add the ID as `umami_analytics: YOUR_WEBSITE_ID`
+5. Set `umami_analytics_domains` to the production hostname
+6. Commit and push
+
+The included tracker omits URL query strings and fragments, honors Do Not Track, and only runs on the configured production hostname.
+
+---
+
 ### Pirsch Analytics
 
 **Best for:** GDPR-compliant analytics without complex setup
@@ -86,7 +112,7 @@ If you're concerned about user privacy or GDPR compliance, consider these altern
 
 - ✅ GDPR compliant
 - ✅ European servers
-- ✅ Free tier available
+- ✅ 30-day free trial
 - ✅ Simple integration
 - ✅ No cookie consent needed
 
@@ -156,6 +182,7 @@ If you're in the European Union or serve EU visitors, consider GDPR requirements
 
 ### Privacy-first services (No GDPR cookie banner needed)
 
+- ✅ Umami Analytics
 - ✅ Pirsch Analytics
 - ✅ Openpanel Analytics
 
@@ -168,12 +195,13 @@ If you're in the European Union or serve EU visitors, consider GDPR requirements
 
 ## Comparing Analytics Services
 
-| Service              | Free         | GDPR                | Setup  | Features         | Best for                   |
-| -------------------- | ------------ | ------------------- | ------ | ---------------- | -------------------------- |
-| **Google Analytics** | ✅           | ⚠️ Requires consent | Easy   | Detailed reports | Detailed tracking          |
-| **Pirsch**           | ✅ Free tier | ✅                  | Easy   | Balanced         | GDPR compliance            |
-| **Openpanel**        | ✅           | ✅                  | Medium | Modern dashboard | Privacy-focused developers |
-| **Cronitor**         | Paid         | ⚠️ Requires consent | Easy   | Uptime + RUM     | Uptime monitoring          |
+| Service              | Free             | GDPR                | Setup  | Features             | Best for                   |
+| -------------------- | ---------------- | ------------------- | ------ | -------------------- | -------------------------- |
+| **Google Analytics** | ✅               | ⚠️ Requires consent | Easy   | Detailed reports     | Detailed tracking          |
+| **Umami Cloud**      | ✅ Hobby plan    | ✅                  | Easy   | Anonymous aggregates | Personal websites          |
+| **Pirsch**           | Trial, then paid | ✅                  | Easy   | Balanced             | GDPR compliance            |
+| **Openpanel**        | ✅               | ✅                  | Medium | Modern dashboard     | Privacy-focused developers |
+| **Cronitor**         | Paid             | ⚠️ Requires consent | Easy   | Uptime + RUM         | Uptime monitoring          |
 
 ---
 
