@@ -92,17 +92,19 @@ layout: default
     {% if page.selected_impact and page.selected_impact.enabled %}
       <section class="home-section selected-impact">
         <h2 class="section-heading">Selected Impact</h2>
-        <ul>
+        <div class="research-projects">
           {% for impact in page.selected_impact.items %}
-            <li>
-              <strong>{{ impact.title }}:</strong>
-              {{ impact.description }}
-              {% if impact.url %}
-                <a href="{{ impact.url }}" target="_blank" rel="noopener noreferrer">[{{ impact.link_label | default: 'Details' }}]</a>
-              {% endif %}
-            </li>
+            <div class="research-project">
+              <div class="research-project-title">
+                <strong>{{ impact.title }}</strong>
+                {% if impact.url %}
+                  <a href="{{ impact.url }}" target="_blank" rel="noopener noreferrer">[{{ impact.link_label | default: 'Details' }}]</a>
+                {% endif %}
+              </div>
+              <div class="research-project-description">{{ impact.description }}</div>
+            </div>
           {% endfor %}
-        </ul>
+        </div>
       </section>
     {% endif %}
 
