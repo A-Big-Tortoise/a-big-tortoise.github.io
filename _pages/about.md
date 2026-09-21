@@ -2,6 +2,7 @@
 layout: about
 title: About
 permalink: /
+visitor_map: true
 subtitle:
 
 profile:
@@ -71,3 +72,5 @@ My research interests mainly focus on Human Sensing and Signal Processing, with 
 I warmly welcome researchers to reach out. Feel free to book a meeting with me
 <a href="https://bookings.cloud.microsoft/bookwithme/user/71e21dfd23584afdb80947c716c4ff66%40uga.edu?anonymous&ismsaljsauthenabled">[link]</a>.
 </p>
+
+{% include visitor_map.liquid hidden=true %}
