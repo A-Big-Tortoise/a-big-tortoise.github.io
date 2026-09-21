@@ -1,0 +1,122 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[left=0.68in,right=0.68in,top=0.48in,bottom=0.48in]{geometry}
+\usepackage{fontspec}
+\setmainfont{Arial}[Ligatures=NoCommon]
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{17365D}
+\hypersetup{
+  pdftitle={Jiayu Chen - Research Resume},
+  pdfauthor={Jiayu Chen},
+  pdfsubject={Research resume},
+  pdfkeywords={physiological sensing, signal processing, machine learning, health monitoring}
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedright
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\urlstyle{same}
+
+\newcommand{\sectiontitle}[1]{%
+  \vspace{0.72em}%
+  {\fontsize{12}{13.3}\selectfont\bfseries\color{accent}\MakeUppercase{#1}}\par
+  \vspace{0.16em}%
+  {\color{accent}\hrule height 0.65pt}%
+  \vspace{0.38em}%
+}
+
+\newcommand{\entryhead}[1]{%
+  {\fontsize{10.25}{11.75}\selectfont #1}\par
+  \vspace{0.12em}%
+}
+
+\newenvironment{tightitems}{%
+  \begin{list}{\textbullet}{%
+    \setlength{\leftmargin}{1.20em}%
+    \setlength{\labelsep}{0.42em}%
+    \setlength{\itemsep}{0.16em}%
+    \setlength{\parsep}{0pt}%
+    \setlength{\topsep}{0.16em}%
+    \setlength{\partopsep}{0pt}%
+  }%
+  \fontsize{9.9}{11.65}\selectfont
+}{\end{list}}
+
+\newcommand{\publication}[1]{%
+  {\fontsize{9.45}{11.05}\selectfont\hangindent=1.05em\hangafter=1\textbullet\hspace{0.42em}#1\par}%
+  \vspace{0.11em}%
+}
+
+\begin{document}
+
+\begin{center}
+  {\fontsize{23}{24}\selectfont\bfseries\color{accent} Jiayu Chen}\par
+  \vspace{0.22em}
+  {\fontsize{9.35}{10.7}\selectfont
+    Athens, GA \textbar{} (706) 247-3015 \textbar{}
+    \href{mailto:jiayu.chen@uga.edu}{Email: jiayu.chen@uga.edu} \textbar{}
+    \href{https://a-big-tortoise.github.io}{Personal Website: a-big-tortoise.github.io}
+  }\par
+  \vspace{0.12em}
+  {\fontsize{9.35}{10.7}\selectfont
+    \href{https://scholar.google.com/citations?user=RgvEBMkAAAAJ}{Google Scholar} \textbar{}
+    \href{https://orcid.org/0009-0003-0904-4114}{ORCID: 0009-0003-0904-4114}
+  }\par
+  \vspace{0.36em}
+  {\fontsize{10.1}{11.7}\selectfont
+    Applied ML researcher developing physiological sensing systems, with strengths in rapid prototyping,
+    large-scale clinical data collection and management, real-time deployment, and FDA-cleared product development.
+  }\par
+\end{center}
+\vspace{-0.20em}
+
+\sectiontitle{Education}
+\entryhead{\textbf{University of Georgia} \textbar{} Athens, GA \textbar{} Aug 2024 - Present (Estimated 2028)}
+\entryhead{Ph.D. in Electrical and Computer Engineering \textbar{} GPA: 4.0/4.0 \textbar{} Advisor: Prof. Wenzhan Song}
+\vspace{0.18em}
+\entryhead{\textbf{Hohai University} \textbar{} Nanjing, China \textbar{} Sep 2020 - May 2024}
+\entryhead{B.Eng. in Software Engineering \textbar{} GPA: 4.80/5.00}
+
+\sectiontitle{Research Experience}
+\entryhead{\textbf{University of Georgia} \textbar{} Ph.D. \textbar{} Athens, GA \textbar{} Aug 2024 - Present}
+\begin{tightitems}
+  \item \textbf{Respiratory \& Sleep Monitoring:} Developed the core contactless respiratory-rate (RR) algorithm for FDA-cleared BedDot (G1). Developed SeismoApnea, a contact-free tri-axial geophone system for overnight sleep-apnea monitoring that estimates total sleep time (TST), Apnea-Hypopnea Index (AHI), and four-class apnea severity. Across 80 overnight recordings from 80 subjects, it achieved an AHI ICC of 0.870 and a severity macro F1 of 73.11\%. FDA clearance is being pursued specifically for AHI estimation.
+  \item \textbf{Cardiovascular Monitoring:} Developed and deployed \href{https://doi.org/10.1145/3770701}{SelfDenoiser}, a self-supervised temporal-spectral framework trained on 11,392 hours of ICU BCG recordings, as the core denoising module for contactless cardiac monitoring. The module improves downstream heart-rate and inter-beat-interval estimation and is part of a filed FDA submission.
+  \item \textbf{Office Health Monitoring:} Developed a contactless vital-sign monitoring system for real-world office environments, achieving heart-rate and respiratory-rate MAEs of approximately 3.9 bpm and 2.4 breaths/min, with 88\% and 21\% temporal coverage, respectively. Following an on-site visit led by a MillerKnoll Senior Vice President, the company procured 30 units for pilot testing.
+  \item \textbf{Infant Monitoring:} Data collection is underway at Children's Healthcare of Atlanta (CHOA) using a contactless tri-axis geophone system in bassinet, incubator, and crib settings. Preliminary signal-quality analysis demonstrates the feasibility of monitoring occupancy, heart rate, respiratory rate, sleep/wake states, and crying.
+\end{tightitems}
+
+\sectiontitle{Selected Impacts}
+\begin{tightitems}
+  \item Developed the core contactless respiration-monitoring algorithm for BedDot (G1), contributing to \href{https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253274}{FDA 510(k) clearance K253274} as a breathing-frequency monitor (June 2026). FDA validation covered 52 adults and reported a respiratory-rate MAE of 1.77 breaths/min.
+\end{tightitems}
+
+\sectiontitle{Selected Publications}
+\publication{\textbf{J. Chen}, et al. \href{https://doi.org/10.1145/3770701}{\textit{SelfDenoiser: Self-supervised Seismic Signal Denoiser for Continuous and Contactless Cardiac Monitoring.}} \textit{Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (PACM IMWUT)}, 9(4), 2025. \textbf{[CORE A* \textbar{} CCF-A]}}
+\publication{Y. Song*, \textbf{J. Chen*}, et al. \href{https://doi.org/10.1145/3810211}{\textit{Contactless Sleep Apnea Detection with Bodyseismography.}} \textit{Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (PACM IMWUT)}, 10(2), 2026. \textbf{[CORE A* \textbar{} CCF-A]}}
+\publication{Y. Song*, \textbf{J. Chen*}, et al. \href{https://doi.org/10.1109/PerCom67906.2026.11524561}{\textit{Attention Feature Fusion with Cluster Contrastive Learning for Snoring and Breath-Holding Detection Using Seismic Sensing.}} \textit{IEEE International Conference on Pervasive Computing and Communications (PerCom)}, 2026. \textbf{[CORE A* \textbar{} CCF-B]}}
+\publication{Y. Song*, \textbf{J. Chen*}, et al. \href{https://cinc.org/2026/Program/accepted/285.html}{\textit{SeatVitals: Geophone-Based Unobtrusive Vital Sign Monitoring for Office Environments.}} Accepted, \textit{Computing in Cardiology (CinC)}, 2026.}
+{\fontsize{9.1}{10.4}\selectfont * Equal contribution.}\par
+
+\sectiontitle{Technical Skills}
+{\fontsize{9.7}{11.3}\selectfont
+  \textbf{Methods:} Self-Supervised Learning, Contrastive Learning, Time-Series Modeling, Signal Processing\par
+  \textbf{Frameworks:} PyTorch, scikit-learn, NumPy, SciPy, pandas\par
+  \textbf{Signals:} BCG/BSG, ECG, PPG\par
+  \textbf{Systems:} Real-Time Inference, MQTT, InfluxDB, Grafana, Linux\par
+  \textbf{Programming:} Python, C, SQL, LaTeX, Git\par
+}
+
+\sectiontitle{Honors and Service}
+{\fontsize{9.7}{11.3}\selectfont
+  \textbf{Honor:} National Scholarship of China\par
+  \textbf{Peer Review:} ACM IMWUT/UbiComp and IEEE Journal of Biomedical and Health Informatics (JBHI)\par
+  \textbf{Teaching:} Teaching Assistant, CSEE 8300: Principles of Cyber-Physical Systems\par
+}
+
+\end{document}
