@@ -34,7 +34,7 @@ selected_impact:
     - title: "FDA 510(k) Clearance Contribution"
       description: "Developed the core contactless respiration-monitoring algorithm for BedDot (G1), contributing to its FDA 510(k) clearance as a breathing-frequency monitor (K253274; decision date: June 25, 2026)."
       url: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253274"
-      link_label: "FDA record"
+      link_label: "FDA Record"
 
 papers_under_review:
   enabled: false
