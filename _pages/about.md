@@ -47,6 +47,7 @@ awards:
   enabled: true
   items:
     - "National Scholarship of China"
+    - "32 additional university-level awards, scholarships, and honors"
 
 services:
   enabled: true
