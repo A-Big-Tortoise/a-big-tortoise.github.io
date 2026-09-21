@@ -5,7 +5,8 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
-        {{ site.first_name }} {{ site.middle_name }}
+        {{ site.first_name }}
+        {{ site.middle_name }}
         {{ site.last_name }}
       {% else %}
         {{ site.title }}
@@ -71,7 +72,9 @@ layout: default
           {% for project in page.in_progress_projects.items %}
             <div class="research-project">
               <div class="research-project-title">
-                <strong><a href="{{ project.url | relative_url }}">{{ project.title }}</a></strong>
+                <strong
+                  ><a href="{{ project.url | relative_url }}">{{ project.title }}</a></strong
+                >
                 {% if project.links %}
                   {% for link in project.links %}
                     <a href="{{ link.url | relative_url }}">[{{ link.label }}]</a>
@@ -133,10 +136,8 @@ layout: default
       </ul>
     {% endif %}
 
-
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
     {% endif %}
-
   </article>
 </div>
