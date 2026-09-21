@@ -29,7 +29,7 @@ in_progress_projects:
       description: "Developing reliable methods for extracting fine-grained HRV metrics from noisy BCG/BSG signals."
 
 papers_under_review:
-  enabled: true
+  enabled: false
   items:
     - title: "SeismoApnea: Bodyseismography-Based Overnight Sleep Apnea Monitoring and Apnea-Hypopnea Index Estimation"
       authors: "Jiayu Chen, Zixuan Zeng, Yingjian Song, Jiahui Li, Zhenlin An, Xiang Zhang, Fei Dou, Deepak Das, Bradley Phillips, WenZhan Song"
