@@ -79,12 +79,16 @@
 
 @article{song2026seatvitals,
   abbr        = {CinC},
-  title={SeatVitals: Geophone-Based Unobtrusive Vital Sign Monitoring for Office Environments},
-  author={Song*, Yingjian and Chen*, Jiayu and Zhang, Yida and Zeng, Zixuan and Pitafi, Zaid Farooq and Phillips, Bradley G. and Zhang, Xiang and Xie, Zaipeng and Lu, Qin and Dou, Fei and Song, Wenzhan},
-  journal={Computing in Cardiology (CinC)},
-  year={2026},
+  title       = {{SeatVitals}: Geophone-Based Contactless Vital Signs Estimation for Smart Office Health Sensing},
+  author      = {Song*, Yingjian and Chen*, Jiayu and Zhang, Yida and Zeng, Zixuan and Pitafi, Zaid Farooq and Phillips, Bradley G. and Zhang, Xiang and Lu, Qin and Song, Wenzhan},
+  journal     = {Computing in Cardiology (CinC)},
+  year        = {2026},
   selected    = {true},
-  preview = {SeatVitals.png}
+  bibtex_show = {true},
+  preview     = {SeatVitals.png},
+  url         = {https://cinc.org/2026/Program/accepted/285.html},
+  pdf         = {https://cinc.org/2026/Program/accepted/285_Preprint.pdf},
+  abstract    = {Real-time monitoring of vital signs in offices enables health promotion, stress management, and workplace optimization. This paper presents SeatVitals, a geophone-based system for unobtrusive and privacy-preserving monitoring of heartbeats and respiration, designed for seamless deployment under office chairs without user involvement. In workplace settings, however, the acquired signals are often heavily contaminated by diverse environmental noise, and labeling heartbeat time series remains inherently challenging. To address these issues, SeatVitals adopts a two-stage learning strategy. To overcome these challenges, SeatVitals first applies self-supervised contrastive learning on large-scale, high-quality sleep data with lower noise levels to learn stable feature representations. The model is then fine-tuned on limited, noisier seated data by aligning these representations with target labels. By leveraging abundant clean unlabeled data together with limited noisy labeled data, SeatVitals achieves both robust generalization and high accuracy in workplace vital sign estimation. Evaluation across 32 subjects yields a mean absolute error (MAE) of 2.44 bpm for heart rate (HR) and 2.20 bpm for respiration rate (RR). The system also achieves competitive performance with only 5\% of labeled data for HR and 15\% for RR, demonstrating strong label efficiency. These results highlight SeatVitals as a reliable and practical solution for healthcare and wellness monitoring in future smart offices.}
 }
 
 
