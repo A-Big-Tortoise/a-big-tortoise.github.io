@@ -104,6 +104,15 @@ layout: default
                 </strong>
               </div>
               <div class="research-project-description">{{ impact.description }}</div>
+              {% for group in impact.image_groups %}
+                <div class="impact-images" style="--impact-columns: {{ group.columns | default: 2 }}{% if group.aspect %}; --impact-aspect: {{ group.aspect }}{% endif %}">
+                  {% for image in group.images %}
+                    <div class="impact-image">
+                      {% include figure.liquid path=image.path class="img-fluid rounded z-depth-1" alt=image.alt sizes="(min-width: 768px) 240px, 33vw" avoid_scaling=group.avoid_scaling %}
+                    </div>
+                  {% endfor %}
+                </div>
+              {% endfor %}
             </div>
           {% endfor %}
         </div>

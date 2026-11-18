@@ -53,6 +53,31 @@ body {
     line-height: 1.45;
     margin-top: 0.15rem;
   }
+
+  .impact-images {
+    display: grid;
+    grid-template-columns: repeat(var(--impact-columns, 2), minmax(0, 1fr));
+    gap: 0.5rem;
+    margin-top: 0.6rem;
+
+    .impact-image {
+      min-width: 0;
+
+      figure,
+      picture {
+        display: block;
+        margin: 0;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: var(--impact-aspect, auto);
+        object-fit: cover;
+      }
+    }
+  }
 }
 
 // Keep the profile image and the content below it on the same right-aligned column.
