@@ -10,56 +10,12 @@ I developed a contactless seismic-sensing system that estimates heart rate, resp
 
 ## Sensing Across Office Chairs
 
-<div class="impact-images" style="--impact-columns: 3; --impact-aspect: 4 / 5">
-  <div class="impact-image">
-    {% include figure.liquid
-      path="assets/img/impact/chair_1.jpg"
-      class="img-fluid rounded z-depth-1"
-      alt="Lounge chair with a sensor mounted beneath the seat"
-      avoid_scaling=true
-    %}
-  </div>
-  <div class="impact-image">
-    {% include figure.liquid
-      path="assets/img/impact/chair_2.jpg"
-      class="img-fluid rounded z-depth-1"
-      alt="Nesting chair on casters with a sensor mounted beneath the seat"
-      avoid_scaling=true
-    %}
-  </div>
-  <div class="impact-image">
-    {% include figure.liquid
-      path="assets/img/impact/chair_3.jpg"
-      class="img-fluid rounded z-depth-1"
-      alt="Drafting stool with a sensor mounted beneath the seat"
-      avoid_scaling=true
-    %}
-  </div>
-  <div class="impact-image">
-    {% include figure.liquid
-      path="assets/img/impact/chair_4.jpg"
-      class="img-fluid rounded z-depth-1"
-      alt="Task chair with armrests and a sensor mounted beneath the seat"
-      avoid_scaling=true
-    %}
-  </div>
-  <div class="impact-image">
-    {% include figure.liquid
-      path="assets/img/impact/chair_5.jpg"
-      class="img-fluid rounded z-depth-1"
-      alt="Side chair on casters with a sensor mounted beneath the seat"
-      avoid_scaling=true
-    %}
-  </div>
-  <div class="impact-image">
-    {% include figure.liquid
-      path="assets/img/impact/chair_6.jpg"
-      class="img-fluid rounded z-depth-1"
-      alt="High-back lounge seat with a sensor mounted beneath the seat"
-      avoid_scaling=true
-    %}
-  </div>
-</div>
+{% include figure.liquid
+  path="assets/img/impact/office_chairs.jpg"
+  class="img-fluid rounded z-depth-1"
+  alt="Six office chairs of different types, each with a sensor mounted beneath the seat"
+  avoid_scaling=true
+%}
 
 ## MillerKnoll Lab Visit
 
