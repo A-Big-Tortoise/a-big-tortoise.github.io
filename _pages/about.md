@@ -36,30 +36,9 @@ selected_impact:
       url: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253274"
       link_label: "FDA Record"
     - title: "MillerKnoll Pilot Order for Workplace Health-Sensing Chairs"
-      description: "Developed a contactless seismic-sensing system that estimates heart rate, respiratory rate, and heart rate variability from sensors beneath more than ten types of office chairs. The work drew laboratory visits from senior vice presidents of MillerKnoll, one of the world's largest furniture manufacturers, which placed a pilot order for 15 units, with testing now underway."
-      image_groups:
-        - columns: 3
-          aspect: "4 / 5"
-          avoid_scaling: true
-          images:
-            - path: "assets/img/impact/chair_1.jpg"
-              alt: "Lounge chair with a sensor mounted beneath the seat"
-            - path: "assets/img/impact/chair_2.jpg"
-              alt: "Nesting chair on casters with a sensor mounted beneath the seat"
-            - path: "assets/img/impact/chair_3.jpg"
-              alt: "Drafting stool with a sensor mounted beneath the seat"
-            - path: "assets/img/impact/chair_4.jpg"
-              alt: "Task chair with armrests and a sensor mounted beneath the seat"
-            - path: "assets/img/impact/chair_5.jpg"
-              alt: "Side chair on casters with a sensor mounted beneath the seat"
-            - path: "assets/img/impact/chair_6.jpg"
-              alt: "High-back lounge seat with a sensor mounted beneath the seat"
-        - columns: 2
-          images:
-            - path: "assets/img/impact/millerknoll_visit_1.jpg"
-              alt: "MillerKnoll executives visiting the lab during a demonstration of the contactless sensing system"
-            - path: "assets/img/impact/millerknoll_visit_2.jpg"
-              alt: "Live demonstration of the sensing system to MillerKnoll visitors in the lab"
+      description: "Developed a contactless seismic-sensing system that estimates heart rate, respiratory rate, and heart rate variability from sensors beneath office chairs; MillerKnoll placed a pilot order for 15 units, with testing now underway."
+      url: "/impact/millerknoll-pilot/"
+      link_label: "Details"
 
 papers_under_review:
   enabled: false
