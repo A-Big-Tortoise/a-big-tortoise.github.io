@@ -71,7 +71,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/cv_intern2.pdf", "_blank");
+          window.open("/assets/pdf/Jiayu_Chen_Research_Resume_Presentations.pdf", "_blank");
         },
       },{
         id: 'social-email',
