@@ -36,7 +36,7 @@ selected_impact:
       url: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253274"
       link_label: "FDA Record"
     - title: '<a href="https://www.millerknoll.com/" class="impact-company" target="_blank" rel="noopener noreferrer">MillerKnoll</a> Pilot Order for Workplace Health-Sensing Chairs'
-      description: "MillerKnoll, one of the world's largest furniture companies (parent of Herman Miller and Knoll), placed a pilot order for 15 units, with testing now underway. Developed a contactless seismic-sensing system that estimates heart rate, respiratory rate, and heart rate variability from sensors beneath office chairs, sofas, and other seating."
+      description: "MillerKnoll, one of the world's largest furniture companies (parent of Herman Miller and Knoll), placed a pilot order for 15 units of the under-seat sensing system, which tracks heart rate, respiratory rate, and heart rate variability without contact on office chairs, sofas, and other seating; testing is now underway."
       url: "/impact/millerknoll-pilot/"
       link_label: "Details"
 
