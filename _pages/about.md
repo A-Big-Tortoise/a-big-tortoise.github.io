@@ -21,7 +21,7 @@ in_progress_projects:
     - title: "Sleep Apnea Monitoring [Principle Illustration] [Preliminary Results]"
       url: "/research/sleep-apnea-monitoring/"
       description: "Utilizing a geophone-based system for overnight sleep apnea monitoring, including apnea-hypopnea index (AHI), apnea severity, and total sleep time estimation."
-    - title: "Baby Vital Signs Monitoring [Poster] [Video]"
+    - title: "Baby Vital Signs Monitoring [Video] [Poster]"
       url: "/research/baby-vital-signs-monitoring/"
       description: "Exploring non-contact and low-burden approaches for monitoring infant vital signs."
     - title: "Heart Rate Variability Estimation [Preliminary Results]"
@@ -35,8 +35,8 @@ selected_impact:
       description: "Developed the core contactless respiration-monitoring algorithm for BedDot (G1), contributing to its FDA 510(k) clearance as a breathing-frequency monitor (K253274; decision date: June 25, 2026)."
       url: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253274"
       link_label: "FDA Record"
-    - title: "MillerKnoll Pilot Order for Workplace Health-Sensing Chairs"
-      description: "Developed a contactless seismic-sensing system that estimates heart rate, respiratory rate, and heart rate variability from sensors beneath office chairs; MillerKnoll placed a pilot order for 15 units, with testing now underway."
+    - title: '<a href="https://www.millerknoll.com/" class="impact-company" target="_blank" rel="noopener noreferrer">MillerKnoll</a> Pilot Order for Workplace Health-Sensing Chairs'
+      description: "MillerKnoll, one of the world's largest furniture companies (parent of Herman Miller and Knoll), placed a pilot order for 15 units, with testing now underway. Developed a contactless seismic-sensing system that estimates heart rate, respiratory rate, and heart rate variability from sensors beneath office chairs, sofas, and other seating."
       url: "/impact/millerknoll-pilot/"
       link_label: "Details"
 

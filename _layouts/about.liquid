@@ -64,6 +64,28 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+    <!-- Selected impact -->
+    {% if page.selected_impact and page.selected_impact.enabled %}
+      <section class="home-section selected-impact">
+        <h2 class="section-heading">Selected Impact</h2>
+        <div class="research-projects">
+          {% for impact in page.selected_impact.items %}
+            <div class="research-project">
+              <div class="research-project-title">
+                <strong>
+                  {{ impact.title }}
+                  {% if impact.url %}
+                    <a href="{{ impact.url }}" target="_blank" rel="noopener noreferrer">[{{ impact.link_label | default: 'Details' }}]</a>
+                  {% endif %}
+                </strong>
+              </div>
+              <div class="research-project-description">{{ impact.description }}</div>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
     <!-- Research projects led by the site owner -->
     {% if page.in_progress_projects and page.in_progress_projects.enabled %}
       <section class="home-section in-progress-projects">
@@ -82,28 +104,6 @@ layout: default
                 {% endif %}
               </div>
               <div class="research-project-description">{{ project.description }}</div>
-            </div>
-          {% endfor %}
-        </div>
-      </section>
-    {% endif %}
-
-    <!-- Selected impact -->
-    {% if page.selected_impact and page.selected_impact.enabled %}
-      <section class="home-section selected-impact">
-        <h2 class="section-heading">Selected Impact</h2>
-        <div class="research-projects">
-          {% for impact in page.selected_impact.items %}
-            <div class="research-project">
-              <div class="research-project-title">
-                <strong>
-                  {{ impact.title }}
-                  {% if impact.url %}
-                    <a href="{{ impact.url }}" target="_blank" rel="noopener noreferrer">[{{ impact.link_label | default: 'Details' }}]</a>
-                  {% endif %}
-                </strong>
-              </div>
-              <div class="research-project-description">{{ impact.description }}</div>
             </div>
           {% endfor %}
         </div>
